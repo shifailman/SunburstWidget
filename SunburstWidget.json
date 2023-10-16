@@ -13,7 +13,7 @@
         {
             "kind": "main",
             "tag": "sunburst-widget",
-            "url": "https://planifyit.github.io/Sunburst/SunburstWidget.js",
+            "url": "https://github.com/shifailman/SunburstWidget/blob/main/sunburst.js",
             "integrity": "",
             "ignoreIntegrity": true
         }
