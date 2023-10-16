@@ -1,0 +1,55 @@
+{
+    "name": "SunburstWidget",
+    "description": "Sunburst Diagram Widget",
+    "newInstancePrefix": "SunburstWidget",
+    "eula": "",
+    "license": "",
+    "id": "SunburstWidget",
+    "version": "1.0.1",
+    "supportsLinkedAnalysisFilterOnSelection": false,
+    "icon": "https://icon-icons.com/icon/mercedes-benz-logo/145798",
+    "vendor": "",
+    "webcomponents": [
+        {
+            "kind": "main",
+            "tag": "sunburst-widget",
+            "url": "https://planifyit.github.io/Sunburst/SunburstWidget.js",
+            "integrity": "",
+            "ignoreIntegrity": true
+        }
+    ],
+    "properties": {
+        "width": {
+            "type": "integer",
+            "default": 750
+        },
+        "height": {
+            "type": "integer",
+            "default": 700
+        }
+    },
+    "methods": {
+        "getDataSource": {
+			"parameters": [],
+			"body": "return this.dataBindings.getDataBinding('dataBinding').getDataSource();",
+			"returnType": "DataSource"
+		}
+    },
+    "events": {},
+    "dataBindings": {
+        "myDataBinding": {
+            "feeds": [
+                {
+                    "id": "dimensions",
+                    "description": "Dimensions",
+                    "type": "dimension"
+                },
+                {
+                    "id": "measures",
+                    "description": "Measures",
+                    "type": "mainStructureMember"
+                }
+            ]
+        }
+    }
+}
